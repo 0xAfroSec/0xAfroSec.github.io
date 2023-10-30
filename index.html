@@ -66,11 +66,6 @@
                 >
               </li>
               <li class="nav__list-item">
-                <a class="nav__list-link" href="#works"
-                  >&lt;Partners &sol;&gt;</a
-                >
-              </li>
-              <li class="nav__list-item">
                 <a class="nav__list-link" href="#contact"
                   >&lt;Contact &sol;&gt;</a
                 >
@@ -102,7 +97,9 @@
 
       <!-- Services -->
       <section id="services" class="section container">
-        <h2 class="section__title">Services</h2>
+        <h2 class="section__title"><span class="service__title" data-role="SERVICES"
+          >SERVICES</span
+        ></h2>
 
         <div class="service-cards">
           <article class="service-card__box">
@@ -150,94 +147,9 @@
         </div>
       </section>
 
-      <!-- Sample Works -->
-      <section id="works" class="section container">
-        <h2 class="section__title">My Works</h2>
-        <div class="works">
-          <article class="work">
-            <div class="work__box">
-              <span class="work__img-box">
-                <img src="./assets/works/sample.png" alt="My Work 1" />
-              </span>
-              <h3 class="work__title">My Landing Page</h3>
-              <span class="work__badges">
-                <span class="work__badge">HTML</span>
-                <span class="work__badge">CSS</span>
-                <span class="work__badge">JavaScript</span>
-              </span>
-            </div>
-          </article>
-          <article class="work">
-            <div class="work__box">
-              <span class="work__img-box">
-                <img src="./assets/works/sample.png" alt="My Work 1" />
-              </span>
-              <h3 class="work__title">My Landing Page</h3>
-              <span class="work__badges">
-                <span class="work__badge">HTML</span>
-                <span class="work__badge">CSS</span>
-                <span class="work__badge">JavaScript</span>
-              </span>
-            </div>
-          </article>
-          <article class="work">
-            <div class="work__box">
-              <span class="work__img-box">
-                <img src="./assets/works/sample.png" alt="My Work 1" />
-              </span>
-              <h3 class="work__title">My Landing Page</h3>
-              <span class="work__badges">
-                <span class="work__badge">HTML</span>
-                <span class="work__badge">CSS</span>
-                <span class="work__badge">JavaScript</span>
-              </span>
-            </div>
-          </article>
-          <article class="work">
-            <div class="work__box">
-              <span class="work__img-box">
-                <img src="./assets/works/sample.png" alt="My Work 1" />
-              </span>
-              <h3 class="work__title">My Landing Page</h3>
-              <span class="work__badges">
-                <span class="work__badge">HTML</span>
-                <span class="work__badge">CSS</span>
-                <span class="work__badge">JavaScript</span>
-              </span>
-            </div>
-          </article>
-          <article class="work">
-            <div class="work__box">
-              <span class="work__img-box">
-                <img src="./assets/works/sample.png" alt="My Work 1" />
-              </span>
-              <h3 class="work__title">My Landing Page</h3>
-              <span class="work__badges">
-                <span class="work__badge">HTML</span>
-                <span class="work__badge">CSS</span>
-                <span class="work__badge">JavaScript</span>
-              </span>
-            </div>
-          </article>
-          <article class="work">
-            <div class="work__box">
-              <span class="work__img-box">
-                <img src="./assets/works/sample.png" alt="My Work 1" />
-              </span>
-              <h3 class="work__title">My Landing Page</h3>
-              <span class="work__badges">
-                <span class="work__badge">HTML</span>
-                <span class="work__badge">CSS</span>
-                <span class="work__badge">JavaScript</span>
-              </span>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <!-- Contact -->
       <section id="contact" class="section container">
-        <h2 class="section__title">Let's Connect!</h2>
+        <h2 class="section__title">Contact Us</h2>
         <div class="contact">
           <form class="contact__form">
             <div class="contact__field-wrapper">
@@ -245,14 +157,21 @@
               <input
                 id="contactNameTxt"
                 type="text"
-                placeholder="What's your name?"
+                placeholder="John Doe"
               />
+            </div>
+            <div class="contact__field-wrapper">
+              <label for="contactEmailTxt">Email:</label>
+              <textarea
+                id="contactEmailTxt"
+                placeholder="JohnDoe@gmail.com!"
+              ></textarea>
             </div>
             <div class="contact__field-wrapper">
               <label for="contactDescriptionTxt">Message:</label>
               <textarea
                 id="contactDescriptionTxt"
-                placeholder="Lets connect!"
+                placeholder="I'd like to create an ERC20 token with mint and burn features."
               ></textarea>
             </div>
 
@@ -269,12 +188,12 @@
 
       <!-- Footer -->
       <footer class="footer">
-        Template made with ❤️ by
+        Built & Maintained by
         <a
-          href="https://github.com/Finestwork"
+          href="https://github.com/dev0cloo"
           target="_blank"
           class="footer__link"
-          >Kapitan Heneral</a
+          >dev0cloo</a
         >
       </footer>
     </main>
