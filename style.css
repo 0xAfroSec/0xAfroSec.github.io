@@ -439,7 +439,7 @@ body {
 }
 .service-card__box {
   margin-bottom: 7rem;
-  border: 2px solid #00372b;
+  border: 2px solid #b10101;
   padding: 1.5rem;
   border-radius: 15px;
   position: relative;
@@ -469,7 +469,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #00ff94;
+  background-color: #b10101;
   top: 0;
   left: 0;
   z-index: -1;
