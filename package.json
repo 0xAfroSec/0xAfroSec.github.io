@@ -1,0 +1,22 @@
+{
+  "name": "0xafrosec.github.io",
+  "version": "1.0.0",
+  "description": "Website for 0xAfroSec",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xAfroSec/0xAfroSec.github.io.git"
+  },
+  "keywords": [
+    "AfroSec"
+  ],
+  "author": "dev0cloo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xAfroSec/0xAfroSec.github.io/issues"
+  },
+  "homepage": "https://github.com/0xAfroSec/0xAfroSec.github.io#readme"
+}
