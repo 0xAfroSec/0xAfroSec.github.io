@@ -346,7 +346,7 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
 }
-.header__title {
+.header__title, .author, .contact__title {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 5rem;
@@ -354,12 +354,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-.header__title-1 {
+.header__title-1, .author, .contact__title {
   display: block;
   position: relative;
 }
-.header__title-1::before,
-.header__title-1::after {
+.header__title-1::before,, .author::before, .contact__title::before,
+.header__title-1::after, .author::after, .contact__title::after {
   content: attr(data-role);
   position: absolute;
   left: 2px;
@@ -370,12 +370,12 @@ body {
   clip: rect(0, 900px, 0, 0); /* Only show some part of the clipped-text */
 }
 
-.header__title-1::before {
+.header__title-1::before , author::before, .contact__title::before{
   text-shadow: -5px 0 #b10101;
   animation: distort-1 2s infinite linear alternate-reverse;
 }
 
-.header__title-1::after {
+.header__title-1::after, .author::after, .contact__title::after  {
   text-shadow: -5px 0 #7218fa;
   animation: distort-2 2s infinite linear alternate-reverse;
 }
