@@ -354,12 +354,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-.header__title-1, .author, .contact__title {
+.header__title-1{
   display: block;
   position: relative;
 }
-.header__title-1::before,, .author::before, .contact__title::before,
-.header__title-1::after, .author::after, .contact__title::after {
+.header__title-1::before{
   content: attr(data-role);
   position: absolute;
   left: 2px;
@@ -370,12 +369,12 @@ body {
   clip: rect(0, 900px, 0, 0); /* Only show some part of the clipped-text */
 }
 
-.header__title-1::before , author::before, .contact__title::before{
+.header__title-1:: before {
   text-shadow: -5px 0 #b10101;
   animation: distort-1 2s infinite linear alternate-reverse;
 }
 
-.header__title-1::after, .author::after, .contact__title::after  {
+.header__title-1::after  {
   text-shadow: -5px 0 #7218fa;
   animation: distort-2 2s infinite linear alternate-reverse;
 }
@@ -509,7 +508,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.author::before, .contact__title::before, .author::after, .contact__title::after {
+. contact__title{
+  display: block;
+  position: relative;
+}
+.contact__title::before,.contact__title::after {
   content: attr(data-role);
   position: absolute;
   left: 2px;
@@ -520,12 +523,12 @@ body {
   clip: rect(0, 900px, 0, 0); /* Only show some part of the clipped-text */
 }
 
-.author::before, .contact__title::before{
+.contact__title::before{
   text-shadow: -5px 0 #b10101;
   animation: distort-1 2s infinite linear alternate-reverse;
 }
 
-.author::after, .contact__title::after  {
+.contact__title::after  {
   text-shadow: -5px 0 #7218fa;
   animation: distort-2 2s infinite linear alternate-reverse;
 }
@@ -639,6 +642,30 @@ body {
 }
 .footer__link {
   color: #b10101;
+}
+.author{
+  display: inline-block
+  position: relative;
+}
+.author::before, .author::after {
+  content: attr(data-role);
+  position: absolute;
+  left: 2px;
+  top: 0;
+  color: white;
+  background: #1111111a; /* To create an illusion that the text is moving */
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0); /* Only show some part of the clipped-text */
+}
+
+.author::before{
+  text-shadow: -5px 0 #b10101;
+  animation: distort-1 2s infinite linear alternate-reverse;
+}
+
+.author::after {
+  text-shadow: -5px 0 #7218fa;
+  animation: distort-2 2s infinite linear alternate-reverse;
 }
 
 /*
