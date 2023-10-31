@@ -7,6 +7,7 @@ const SERVICE_BOXES = document.querySelectorAll(".service-card__box");
 const ACTIVE_LINK_CLASS = "active";
 const BREAKPOINT = 576;
 const BG_ELEMENT = document.getElementById("mainId");
+const CONTACT_BUTTON = document.getElementById("headerBtn");
 
 let currentServiceBG = null;
 let currentActiveLink = document.querySelector(".nav__list-link.active");
@@ -135,13 +136,18 @@ new SweetScroll({
   offset: NAV_BAR.getBoundingClientRect().height - 80,
 });
 
-// handles the hover animation on the whole page
 const moveWBG = (x, y) => {
   Object.assign(BG_ELEMENT.style, {
     left: x + "px",
     top: y + "px",
   });
 };
-window.addEventListener("mousemove", (e) => {
-  moveWBG(e.clientX, e.clientY);
+HERO_HEADER.addEventListener("mouseenter", (e) => {
+  moveWBG(e.pageX, e.pageY);
+});
+HERO_HEADER.addEventListener("mousemove", (e) => {
+  moveWBG(e.pageX, e.pageY);
+});
+HERO_HEADER.addEventListener("mouseleave", () => {
+  moveWBG(CONTACT_BUTTON.offsetLeft,CONTACT_BUTTON.offsetTop);
 });

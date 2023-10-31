@@ -933,8 +933,6 @@ font-size:1.8rem; font-weight:600}
   height: 80px;
   border-radius: 50%;
   background-color: #ff0000;
-  top: 0;
-  left: 0;
   z-index: -1;
   filter: blur(30px);
   transform: translate(-50%, -50%);
