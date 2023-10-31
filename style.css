@@ -489,51 +489,7 @@ body {
   animation: distort-2 2s infinite linear alternate-reverse;
 }
 
-/*
- * ==================
- * Works
- * ==================
- */
-.works {
-  margin-top: 10rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-.work {
-  width: 100%;
-  padding: 2%;
-}
-.work__box {
-  border-radius: 7px;
-  padding: 1.5rem;
-  background-color: #26222d;
-}
-.work__img-box {
-  width: 100%;
-  display: flex;
-  border-radius: 7px;
-  overflow: hidden;
-}
-.work__img-box img {
-  width: 100%;
-}
-.work__title {
-  margin-top: 1rem;
-  font-weight: 700;
-}
-.work__badges {
-  display: flex;
-  margin-top: 2rem;
-  overflow: hidden;
-}
-.work__badge {
-  background-color: #59ffb91c;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding: 1rem;
-  margin-right: 1rem;
-}
+
 
 /*
  * ==================
@@ -553,6 +509,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.author::before, .contact__title::before, .author::after, .contact__title::after {
+  content: attr(data-role);
+  position: absolute;
+  left: 2px;
+  top: 0;
+  color: white;
+  background: #1111111a; /* To create an illusion that the text is moving */
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0); /* Only show some part of the clipped-text */
+}
+
+.author::before, .contact__title::before{
+  text-shadow: -5px 0 #b10101;
+  animation: distort-1 2s infinite linear alternate-reverse;
+}
+
+.author::after, .contact__title::after  {
+  text-shadow: -5px 0 #7218fa;
+  animation: distort-2 2s infinite linear alternate-reverse;
+}
+
 .contact__illustration {
   display: none;
 }
