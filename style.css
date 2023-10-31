@@ -346,7 +346,7 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
 }
-.header__title-1 {
+.header__title{
   text-transform: uppercase;
   font-weight: 800;
   font-size: 5rem;
@@ -508,14 +508,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.contact__title {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 5rem;
-  line-height: 1;
-  display: flex;
-  flex-direction: column;
-}
+
 . contact__title{
   display: block;
   position: relative;
@@ -651,10 +644,7 @@ body {
 .footer__link {
   color: #b10101;
 }
-.author{
-  display: flex;
-  flex-direction: column;
-}
+
 .author{
   display: inline-block
   position: relative;
