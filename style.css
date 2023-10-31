@@ -159,7 +159,7 @@ body {
   height: 100%;
   line-height: 1.5;
   font-size: 1.6rem; /* 16px */
-  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+  font-family: "IBM Plex Mono", "Poppins", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -369,7 +369,7 @@ body {
   clip: rect(0, 900px, 0, 0); /* Only show some part of the clipped-text */
 }
 
-.header__title-1:: before {
+.header__title-1::before {
   text-shadow: -5px 0 #b10101;
   animation: distort-1 2s infinite linear alternate-reverse;
 }
@@ -429,11 +429,14 @@ font-size:1.8rem; font-weight:600}
 }
 .service-card__box {
   margin-bottom: 7rem;
-  border: 2px solid #b10101;
+  border: 2px solid #db3b3b;
   padding: 1.5rem;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+}
+.service-card__box:hover {
+border-style: dashed;
 }
 .service-card__illustration {
   display: flex;
@@ -446,11 +449,12 @@ font-size:1.8rem; font-weight:600}
 .service-card__title {
   font-weight: 800;
   font-size: 2rem;
-  color: #b10101;
+  color: #ff8d8d;
+
   margin-top: 2rem;
 }
 .service-card__msg {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.6;
 }
@@ -510,7 +514,7 @@ font-size:1.8rem; font-weight:600}
   margin-right: auto;
 }
 
-. contact__title{
+.contact__title{
   display: block;
   position: relative;
 }
@@ -582,6 +586,7 @@ font-size:1.8rem; font-weight:600}
 .contact__illustration img {
   pointer-events: none;
   width: 100%;
+  opacity: 1;
 }
 .contact__illustration::before {
   content: "";
@@ -744,7 +749,9 @@ font-size:1.8rem; font-weight:600}
   .contact__illustration {
     width: 60%;
     display: flex;
-    max-width: 450px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    opacity: .7;
     margin-left: auto;
     margin-right: auto;
   }

@@ -136,6 +136,8 @@ new SweetScroll({
   offset: NAV_BAR.getBoundingClientRect().height - 80,
 });
 
+
+// handles the background animation on the hero header
 const moveWBG = (x, y) => {
   Object.assign(BG_ELEMENT.style, {
     left: x + "px",
