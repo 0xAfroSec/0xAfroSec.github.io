@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+    rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
     <link rel="stylesheet" href="./style.css" />
-    <script src="../index.js" defer></script>
+    <script src="./src.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfroSec | Successful Form Submission</title>
 </head>
 <body>
     <main>
-
-        <h1 class="header__title">Thank You!</h1> <p>Your form has been successfully submitted. We will get back to you soon.</p> <a href="../index.html">Return to Home Page</a>
+        <span id="mainId" class="main_class"></span>
+  
+        <!-- Hero Header -->
+        <header id="heroHeader" class="hero-header">
+          <section class="header__container container">
+            <div class="header__left">
+              <h1 class="header__title">
+                <span class="header__title-1" data-role="Thank"
+                  >Thank</span
+                >
+                <span class="header__title-2" data-role="You&excl;"
+                  >You&excl;</span
+                >
+              </h1>
+              <p class="header__msg">
+                Your Message has been <span class="header__span">Successfully Submitted.</span></p>
+                <p class="header__msg"> A member of our Team will get back to you shortly.</p>
+              
+              <a href="../index.html" id="headerBtn" class="header__button">Return to Home Page</a>
+              <div class="header__right">
+                <img src="../assets/afrosec_nobg.png" alt="Header section illustration" />
+              </div>
+            </div>
+          </section>
+          <span class="header__bg"></span>
+           <!-- Footer -->
+        </header>
+      <footer class="footer">
+       Copyright © 2023 Built & Maintained by
+        <a
+          href="https://github.com/dev0cloo"
+          target="_blank"
+          class="footer__link"
+          >dev0cloo</a>®
+        
+      </footer>
+        
     </main>
 </body>
 </html>
