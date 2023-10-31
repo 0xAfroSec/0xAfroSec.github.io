@@ -479,12 +479,12 @@ body {
   clip: rect(0, 900px, 0, 0); /* Only show some part of the clipped-text */
 }
 
-.services__title::before {
+.service__title::before {
   text-shadow: -5px 0 #b10101;
   animation: distort-1 2s infinite linear alternate-reverse;
 }
 
-.services__title::after {
+.service__title::after {
   text-shadow: -5px 0 #7218fa;
   animation: distort-2 2s infinite linear alternate-reverse;
 }
