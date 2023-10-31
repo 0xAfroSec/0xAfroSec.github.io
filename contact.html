@@ -41,6 +41,8 @@
     <label for="contactNameTxt">Name:</label>
     <input
       id="contactNameTxt"
+      name="name"
+      required="required"
       type="text"
       placeholder="John Doe"
     />
@@ -48,6 +50,8 @@
   <div class="contact__field-wrapper">
     <label for="contactEmailTxt">Email:</label>
     <textarea
+    name="email"
+    required="required"
       id="contactEmailTxt"
       placeholder="JohnDoe@gmail.com"
     ></textarea>
@@ -55,10 +59,10 @@
   <div class="contact__field-wrapper">
     <label for="contactDescriptionTxt">Message:</label>
     <textarea
-      id="contactDescriptionTxt"
+      id="contactDescriptionTxt" name="message" required="required"
       placeholder="I'd like to create an ERC20 token with mint and burn features."
     ></textarea>
   </div>
 
-  <button type="submit" class="contact__submit-btn">Submit</button>
+  <button name="submit" type="submit" class="contact__submit-btn">Submit</button>
 </form>

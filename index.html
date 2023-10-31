@@ -151,42 +151,37 @@
         <h2 class="section__title"><span class="contact__title" data-role="CONTACT"
           >CONTACT</span></h2>
         <div class="contact">
-          <form method="post" action="https://forms.un-static.com/forms/cead83046c9cafadea6d9787616ce849566585ea">
-            <div class="form-group row">
-              <label for="name" class="col-4 col-form-label">Name</label>
-              <div class="col-8">
-                <div class="input-group">
-                  <div class="input-group-addon">
-                    <i class="fa fa-user"></i>
-                  </div>
-                  <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
-                </div>
-              </div>
+          <form method="post" class="contact__form" action="https://forms.un-static.com/forms/cead83046c9cafadea6d9787616ce849566585ea
+          ">
+            <div class="contact__field-wrapper">
+              <label for="contactNameTxt">Name:</label>
+              <input
+                id="contactNameTxt"
+                name="name"
+                required="required"
+                type="text"
+                placeholder="John Doe"
+              />
             </div>
-            <div class="form-group row">
-              <label for="email" class="col-4 col-form-label">E-mail address</label>
-              <div class="col-8">
-                <div class="input-group">
-                  <div class="input-group-addon">
-                    <i class="fa fa-envelope"></i>
-                  </div>
-                  <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
-                </div>
-              </div>
+            <div class="contact__field-wrapper">
+              <label for="contactEmailTxt">Email:</label>
+              <textarea
+              name="email"
+              required="required"
+                id="contactEmailTxt"
+                placeholder="JohnDoe@gmail.com"
+              ></textarea>
             </div>
-            <div class="form-group row">
-              <label for="message" class="col-4 col-form-label">Message</label>
-              <div class="col-8">
-                <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
-              </div>
+            <div class="contact__field-wrapper">
+              <label for="contactDescriptionTxt">Message:</label>
+              <textarea
+                id="contactDescriptionTxt" name="message" required="required"
+                placeholder="I'd like to create an ERC20 token with mint and burn features."
+              ></textarea>
             </div>
-            <div class="form-group row">
-              <div class="offset-4 col-8">
-                <button name="submit" type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </div>
-          </form>
           
+            <button name="submit" type="submit" class="contact__submit-btn">Submit</button>
+          </form>
           
           <span class="contact__illustration">
             <img
